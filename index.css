@@ -3,8 +3,12 @@
   padding: 0
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 720px) {
   main {
     background: azure
+  }
+
+  .navbar {
+    left: 0
   }
 }
