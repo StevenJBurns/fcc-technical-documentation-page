@@ -3,12 +3,19 @@
   padding: 0
 }
 
-@media screen and (max-width: 720px) {
-  main {
-    background: azure
+@media screen and (min-width: 720px) {
+  #main-doc {
+    background: azure;
+    margin-left: 320px;
+    position: absolute
   }
 
-  .navbar {
-    left: 0
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 320px;
+    min-width: 288px;
   }
 }
