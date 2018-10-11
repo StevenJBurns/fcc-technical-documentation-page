@@ -8,6 +8,10 @@ html {
   font-family: Roboto, Nunito, Futura, sans-serif
 }
 
+body {
+  background: azure
+}
+
 #navbar {
   display: flex;
   flex-direction: column;
@@ -50,22 +54,29 @@ html {
 }
 
 #main-doc {
-  padding: 40px
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: stretch;
+  justify-self: stretch
+}
+
+#main-doc header {
+  display: none; 
 }
 
 @media screen and (min-width: 720px) {
   #main-doc {
-    background: azure;
     margin-left: 320px;
     position: absolute
   }
 
   #navbar {
-    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 320px;
+    position: fixed;
     min-width: 288px;
   }
 }
