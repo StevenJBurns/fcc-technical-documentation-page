@@ -9,13 +9,15 @@ html {
 }
 
 body {
-  background: azure
+  background: #F0F0F0
 }
 
 #navbar {
   display: flex;
   flex-direction: column;
-  background-color: #F0FFF0
+  background-color: #F0FFF0;
+  border-bottom: 2px darkgreen solid;
+  border-right: none
   /* F0FFF0 = honeydew */
 }
 
@@ -53,16 +55,28 @@ body {
   color: #5F5F5F
 }
 
+hr {
+  width: 100%;
+  margin: 12px auto
+}
+
 #main-doc {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: stretch;
-  justify-self: stretch
+  padding: 48px
 }
 
 #main-doc header {
   display: none; 
+}
+
+.main-section {
+  min-height: 160px
+}
+
+.main-section ul {
+  list-style: none
 }
 
 @media screen and (min-width: 720px) {
@@ -78,5 +92,7 @@ body {
     width: 320px;
     position: fixed;
     min-width: 288px;
+    border-bottom: none;
+    border-right: 2px darkgreen solid
   }
 }
